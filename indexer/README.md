@@ -4,7 +4,7 @@ This is a basic BTNS indexer written in PHP which supports indexing BTNS broadca
 
 # DISCLAIMER
 
-`BTNS` is a bleeding-edge experimental protocol to play around with token functionality on **`Bitcoin`** and **`Counterparty`**. This is a hobby project, and  I am **NOT** responsible for any losses, financial or otherwise, incurred from using this experimental protocol and its functionality. 
+`BTNS` is a bleeding-edge experimental protocol to play around with token functionality on **`Counterparty/Bitcoin`** and **`Dogeparty/Doge`**. This is a hobby project, and  I am **NOT** responsible for any losses, financial or otherwise, incurred from using this experimental protocol and its functionality. 
 
 Science is messy sometimes... _**DO NOT**_ put in funds your not willing to lose!
 
