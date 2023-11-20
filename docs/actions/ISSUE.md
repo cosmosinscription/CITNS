@@ -22,14 +22,14 @@ This command creates or issues a `BTNS` `token`
 | `CALLBACK_BLOCK`   | String | Enable `CALLBACK` command after `CALLBACK_BLOCK`                                            |
 | `CALLBACK_TICK`    | String | `TICK` `token` users get when `CALLBACK` command is used                                    |
 | `CALLBACK_AMOUNT`  | String | `TICK` `token` amount that users get when `CALLBACK` command is used                        |
-| `MINT_ALLOW_LIST`  | String | `TX_HASH` of a BTNS `LIST` of addresses to allow minting from                               |
-| `MINT_BLOCK_LIST`  | String | `TX_HASH` of a BTNS `LIST` of addresses to NOT allow minting from                           |
+| `ALLOW_LIST`       | String | `TX_HASH` of a BTNS `LIST` of addresses allowed to interact with this token                 |
+| `BLOCK_LIST`       | String | `TX_HASH` of a BTNS `LIST` of addresses NOT allowed to interact with this token             |
 
 
 ## Formats
 
 ### Version `0`
-- `VERSION|TICK|MAX_SUPPLY|MAX_MINT|DECIMALS|DESCRIPTION|MINT_SUPPLY|TRANSFER|TRANSFER_SUPPLY|LOCK_SUPPLY|LOCK_MINT|LOCK_DESCRIPTION|LOCK_RUG|LOCK_SLEEP|LOCK_CALLBACK|CALLBACK_BLOCK|CALLBACK_TICK|CALLBACK_AMOUNT|MINT_ALLOW_LIST|MINT_BLOCK_LIST`
+- `VERSION|TICK|MAX_SUPPLY|MAX_MINT|DECIMALS|DESCRIPTION|MINT_SUPPLY|TRANSFER|TRANSFER_SUPPLY|LOCK_SUPPLY|LOCK_MINT|LOCK_DESCRIPTION|LOCK_RUG|LOCK_SLEEP|LOCK_CALLBACK|CALLBACK_BLOCK|CALLBACK_TICK|CALLBACK_AMOUNT|ALLOW_LIST|BLOCK_LIST`
 
 ### Version `1` - Edit `DESCRIPTION`
 - `VERSION|TICK|DESCRIPTION`
@@ -43,6 +43,9 @@ This command creates or issues a `BTNS` `token`
 ### Version `4` - Edit `CALLBACK` `PARAMS`
 - `VERSION|TICK|LOCK_CALLBACK|CALLBACK_BLOCK|CALLBACK_TICK`
 
+### Version `5` - Edit `LIST` `PARAMS`
+- `VERSION|TICK|ALLOW_LIST|BLOCK_LIST`
+
 ## Examples
 ```
 bt:ISSUE|0|JDOG
@@ -50,8 +53,8 @@ This example issues a JDOG token
 ```
 
 ```
-bt:ISSUE|0|JDOG||||||||1
-This example issues a JDOG token with LOCK_SUPPLY set to 1 to permanently
+bt:ISSUE|0|JDOG|1||||1|||1
+This example issues a JDOG token with MAX_SUPPLY set to 1, Mints 1 token via MINT_SUPPLY, and has LOCK_SUPPLY set to 1 to permanently lock the MAX_SUPPLY
 ```
 
 ```
@@ -100,6 +103,8 @@ This example issues a TEST token with a max supply of 100, and a maximum mint of
 - Additional `TICK` `ISSUE` transactions after first valid `TICK` `ISSUE`, will be considered invalid and ignored, unless broadcast from `token` owners address
 - `DECIMALS` can not be changed after `token` supply is issued and/or minted
 - `MAX_SUPPLY` max value is 1,000,000,000,000,000,000,000 (1 Sextillion)
+- `MAX_SUPPLY` can not be set below existing supply
+- `LOCK_SUPPLY` can not be set to `1` and permanently locked until `MIN_TOKEN_SUPPLY` supply exists.
 
 ## Notes
 - `ISSUE` `TICK` with `MAX_SUPPLY` and `MINT_SUPPLY` set to any non `0` value, to mint supply until `MAX_SUPPLY` is reached (owner can mint beyond `MAX_MINT`)
@@ -114,6 +119,6 @@ This example issues a TEST token with a max supply of 100, and a maximum mint of
 - `DESCRIPTION` can NOT contain any pipe `|` or semi-colon `;` characters, as these are reserved
 - `CALLBACK_BLOCK`, `CALLBACK_TICK`, and `CALLBACK_AMOUNT` can be edited via `ISSUE` action until `LOCK_CALLBACK` is set to `1`
 - `DEPLOY` `ACTION` can be used for backwards-compatability with BRC20/SRC20 `DEPLOY`
-- By default any address can `MINT`, to change this behavior use `MINT_ALLOW_LIST` and `MINT_BLOCK_LIST`
+- By default any address can interact with a BTNS token, to change this behavior use `ALLOW_LIST` and `BLOCK_LIST`
 - If `TICK` contains any unicode characters, then `TICK` should be `base64` encoded
 - `counterparty` `ASSET` and `SUBASSET` names are reserved within the BTNS for use by the `counterparty` owner
