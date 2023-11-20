@@ -8,6 +8,9 @@ The **`BTNS`** support the **`BRC20`** ordinals assets using the `ordinals` feat
 
 **`BTNS`** and **`BTNS-420`** are **NOT** _officially_ endorsed by the **`Counterparty`** project. 
 
+**`BTNS`** and **`BTNS-420`** is a **SINGLE** _platform_ that plugs into **`multiple`** chains backend.
+
+
 **`BTNS-420`** was copied, almost entirely, from the existing **`Counterparty`** platform features. 
 
 This is a personal hobby project, to allow for experimentation with additional token features and functionality.
