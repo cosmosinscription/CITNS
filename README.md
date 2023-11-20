@@ -77,7 +77,7 @@ Name                          | Title                                     |  Aut
 # BTNS Logos
 
 ## BTNS Logo
-![BTNS Logo](./logos/BTNS.wtf.png)
+![BTNS Logo](./logos/elephant.svg)
 
 ## BTNS-420 Logo
 ![BTNS Logo](./logos/BTNS-420.io.png)
