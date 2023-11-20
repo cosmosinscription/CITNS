@@ -2,7 +2,10 @@
 
 This is the official repository for Broadcast Token Naming System (**`BTNS`**). 
 
-The **`BTNS`** operates on the **`Counterparty`** platform using the `broadcast` feature. 
+The **`BTNS`** operates on the **`Counterparty/Bitcoin`** **`Dogeparty/Doge`** **`other blockchains`** platforms using the `broadcast` feature.
+
+The **`BTNS`** can support the **`BRC20`** ordinals assets as well. 
+
 
 **`BTNS`** and **`BTNS-420`** are **NOT** _officially_ endorsed by the **`Counterparty`** project. 
 
