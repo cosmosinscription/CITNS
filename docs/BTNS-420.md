@@ -13,7 +13,7 @@ Establish a standardized ruleset for additional CITNS `token` experimentation.
 # Rationale
 CITNS-420 builds on the token framework in the [Cosmos Inscription Token Naming System](./CITNS.md) and establishes a standard set of features and rules by which to operate. 
 
-This spec defines the core `ACTION` commands that can be used to perform various functions within the BTNS.
+This spec defines the core `ACTION` commands that can be used to perform various functions within the CITNS.
 
 CITNS-420 can be extended in the future to allow for additional `ACTION` and `PARAM` options. 
 
