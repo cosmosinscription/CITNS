@@ -1,54 +1,54 @@
-        Title: BTNS Token Standard (BTNS-420)
-        Author: Jeremy Johnson (J-Dog)
+        Title: Cosmos Inscription Token Standard (CITNS-420)
+        Author: Lei Xiaobo
         Status: Draft
         Type: Informational
-        Created: 2023-05-25
+        Created: 2023-12-04
 
 # Abstract
-Extend BTNS to establish a token standard.
+Extend CITNS to establish a token standard.
 
 # Motivation
-Establish a standardized ruleset for additional BTNS `token` experimentation.
+Establish a standardized ruleset for additional CITNS `token` experimentation.
 
 # Rationale
-BTNS-420 builds on the token framework in the [Broadcast Token Naming System](./BTNS.md) and establishes a standard set of features and rules by which to operate. 
+CITNS-420 builds on the token framework in the [Cosmos Inscription Token Naming System](./CITNS.md) and establishes a standard set of features and rules by which to operate. 
 
 This spec defines the core `ACTION` commands that can be used to perform various functions within the BTNS.
 
-BTNS-420 can be extended in the future to allow for additional `ACTION` and `PARAM` options. 
+CITNS-420 can be extended in the future to allow for additional `ACTION` and `PARAM` options. 
 
 This spec is a work in progress, and additional rules and notes will be added as spec is more clearly defined. 
 
-BTNS-420 `ACTION` `PARAMS` will not be considered finalized until `ACTIVATION_BLOCK` for the `ACTION` is reached.
+CITNS-420 `ACTION` `PARAMS` will not be considered finalized until `ACTIVATION_BLOCK` for the `ACTION` is reached.
 
 # Definitions
-- `ACTIVATION_BLOCK` - A specific block height when a BTNS `ACTION` becomes usable
+- `ACTIVATION_BLOCK` - A specific block height when a CITNS `ACTION` becomes usable
 - `ACTION` - A specific type of command performed on a `token`
 - `ASSET` - A token created via `issuance` transactions on the `counterparty` platform
-- `SUBASSET` - A specific token type on the `counterparty` platform, which is linked to an `ASSET`
-- `VERSION` - A specific `ACTION` command `broadcast` format version
+- `SUBASSET` - A specific token type on the `CITNS` platform, which is linked to an `ASSET`
+- `VERSION` - A specific `ACTION` command `CITNS` format version
 - `JSON` - A text-based way of representing JavaScript object literals, arrays, and scalar data
 - `PARAMS` - Parameters specified along with an `ACTION` command
-- `XCP` - A specific `ASSET` on the `counterparty` platform
-- `GAS` - A specific `token` on the `BTNS` platform
-- `broadcast` - A general purpose transaction type which allows broadcasting of a message to the `counterparty` platform
-- `counterparty` - A token platform on Bitcoin (BTC) which was created in 2014 ([counterparty.io](https://counterparty.io))
-- `issuance` - A transaction type which allows for creation of `ASSET` and issuing of supply on the Counterparty platform
-- `token` - A token created in the BTNS via a `MINT` or `ISSUE` `ACTION` `broadcast` transaction
+- `COSS` - A specific `ASSET` on the `CITNS` platform
+- `GAS` - A specific `token` on the `CITNS` platform
+- `broadcast` - A general purpose transaction type which allows broadcasting of a message to the `CITNS` platform
+- `Cosmos` - A Blockchain platform  which was created in 2014 ([Comos.network](https://counterparty.io))
+- `issuance` - A transaction type which allows for creation of `ASSET` and issuing of supply on the CITNS platform
+- `token` - A token created in the CITNS via a `MINT` or `ISSUE` `ACTION` `broadcast` transaction
 
 
 # Specification
 
 ## Project Prefix
-The default BTNS prefix which should be used for BTNS transactions is `BTNS` and `BT`. All BTNS actions will begin with `btns:` or `bt:` (case insensitive)
+The default CITNS prefix which should be used for CITNS transactions is `btns` and `bt`. All CITNS actions will begin with `btns:` or `bt:` (case insensitive)
 
 ## Project Versioning
-The default BTNS version is `0` when no `broadcast` `value` is specified
+The default CITNS version is `0` when no `broadcast` `value` is specified
 
 ## Format Versioning
 Establishing a `VERSION` as the first field in every `ACTION` command, allows for easier expansion and parsing of `PARAMS` in various standardized formats.
 
-The default BTNS format version is `0` when no `VERSION` is given
+The default CITNS format version is `0` when no `VERSION` is given
 
 ## `ACTION` commands and `PARAMS`
 By defining `ACTION` commands and `PARAMS` for each command, we standardize a way in which the `BTNS` `token` functionality can be extended.
