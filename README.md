@@ -22,15 +22,7 @@ If you find this project interesting, please consider making a donation of **`AT
 Science is messy sometimes... _**DO NOT**_ put in funds your not willing to lose!
 
 
-# CITNS Specs
-
-Name                          | Title                                     |  Author / Owner        | Status        |
-----------------------------  | ----------------------------------------- | ---------------------- | ------------- |
-[`CITNS`](./docs/CITNS.md)        | Cosmos Inscritpiton Token Naming System (**CITNS**) | Lei Xiaobo  | Draft      |
-[`CITNS-420`](./docs/CITNS-420.md)| CITNS Token Standard (**CITNS-420**)        | Lei Xiaobo  | Draft         |
-
-
-# CITNS `ACTION` commands
+# Cosmos Inscription Token Naming System (CITNS) Specs
 
 | ACTION                                     | Description                                                                                       | 
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------- |
@@ -40,6 +32,7 @@ Name                          | Title                                     |  Aut
 | [`CALLBACK`](./docs/actions/CALLBACK.md)   | Return all `token` supply to owner address after a set block, in exchange for a different `token` |
 | [`DESTROY`](./docs/actions/DESTROY.md)     | Destroy `token` supply forever                                                                    |
 | [`DISPENSER`](./docs/actions/DISPENSER.md) | Create a dispenser (vending machine) to dispense a `token` when triggered                         |
+| [`SWAP`](./docs/actions/SWAP.md)           | Create a pair to exchange `token1`/`token2`                         |
 | [`DIVIDEND`](./docs/actions/DIVIDEND.md)   | Issue a dividend on a `token`                                                                     |
 | [`ISSUE`](./docs/actions/ISSUE.md)         | Create or issue a `token` and define how the token works                                          |
 | [`LIST`](./docs/actions/LIST.md)           | Create a list for use with various CITNS `ACTION` commands                                         |
