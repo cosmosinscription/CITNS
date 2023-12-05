@@ -49,7 +49,7 @@ To specify a specific version of a BTNS spec, you can specify the version number
 ## `DEPLOY` format
 This format allows one to create a token and specify the following information about it
 
-- `TICK` - 1 to 5 characters in length (see rules below ) (required)
+- `TICK` - 1 to 1024 characters in length (see rules below ) (required)
 - `MAX_SUPPLY` - Maximum token supply (max: 18,446,744,073,709,551,615 - commas not allowed)
 - `MAX_MINT` - Maximum amount of supply a `MINT` transaction can issue
 - `DECIMALS` - Number of decimal places token should have (max: 18, default: 0)
@@ -85,6 +85,7 @@ The above example issues a TEST token with a max supply of 100, and a maximum mi
 - Allowed characters in `TICK`:
    - Any word character (alphanumeric characters and underscores)
    - Special characters: ~!@#$%^&*()_+\-={}[\]\\:<>.?/
+   - empty space
    - Most printable emojis in U+1F300 to U+1F5FF
 - Special characters pipe `|` and semicolon `;` are **NOT** to be used in `TICK` names 
 
