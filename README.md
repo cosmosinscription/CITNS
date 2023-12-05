@@ -22,7 +22,7 @@ If you find this project interesting, please consider making a donation of **`AT
 Science is messy sometimes... _**DO NOT**_ put in funds your not willing to lose!
 
 
-# BTNS Specs
+# CITNS Specs
 
 Name                          | Title                                     |  Author / Owner        | Status        |
 ----------------------------  | ----------------------------------------- | ---------------------- | ------------- |
@@ -30,7 +30,7 @@ Name                          | Title                                     |  Aut
 [`CITNS-420`](./docs/CITNS-420.md)| CITNS Token Standard (**CITNS-420**)        | Lei Xiaobo  | Draft         |
 
 
-# BTNS `ACTION` commands
+# CITNS `ACTION` commands
 
 | ACTION                                     | Description                                                                                       | 
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------- |
