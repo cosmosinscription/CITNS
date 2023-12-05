@@ -24,7 +24,7 @@ CITNS-420 `ACTION` `PARAMS` will not be considered finalized until `ACTIVATION_B
 # Definitions
 - `ACTIVATION_BLOCK` - A specific block height when a CITNS `ACTION` becomes usable
 - `ACTION` - A specific type of command performed on a `token`
-- `ASSET` - A token created via `issuance` transactions on the `counterparty` platform
+- `ASSET` - A token created via `issuance` transactions on the `CITNS` platform
 - `SUBASSET` - A specific token type on the `CITNS` platform, which is linked to an `ASSET`
 - `VERSION` - A specific `ACTION` command `CITNS` format version
 - `JSON` - A text-based way of representing JavaScript object literals, arrays, and scalar data
