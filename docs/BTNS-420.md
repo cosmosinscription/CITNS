@@ -57,20 +57,20 @@ By defining `ACTION` commands and `PARAMS` for each command, we standardize a wa
 `bt:ACTION|PARAMS`
 
 
-## BTNS `ACTION` commands
-Below is a list of the defined BTNS `ACTION` commands and the function of each:
+## CITNS `ACTION` commands
+Below is a list of the defined CITNS `ACTION` commands and the function of each:
 
 | ACTION                                | Description                                                                                       | 
 | ------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [`AIRDROP`](./actions/AIRDROP.md)     | Transfer/Distribute `token` supply to a `LIST`                                                    |
-| [`BATCH`](./actions/BATCH.md)         | Execute multiple BTNS `ACTION` commands in a single transaction                                   |
+| [`BATCH`](./actions/BATCH.md)         | Execute multiple CITNS `ACTION` commands in a single transaction                                   |
 | [`BET`](./actions/BET.md)             | Bet `token` on `broadcast` oracle feed outcomes                                                   |
 | [`CALLBACK`](./actions/CALLBACK.md)   | Return all `token` supply to owner address after a set block, in exchange for a different `token` |
 | [`DESTROY`](./actions/DESTROY.md)     | Destroy `token` supply forever                                                                    |
 | [`DISPENSER`](./actions/DISPENSER.md) | Create a dispenser (vending machine) to dispense a `token` when triggered                         |
 | [`DIVIDEND`](./actions/DIVIDEND.md)   | Issue a dividend on a `token`                                                                     |
 | [`ISSUE`](./actions/ISSUE.md)         | Create or issue a `token` and define how the token works                                          |
-| [`LIST`](./actions/LIST.md)           | Create a list for use with various BTNS `ACTION` commands                                         |
+| [`LIST`](./actions/LIST.md)           | Create a list for use with various CITNS `ACTION` commands                                         |
 | [`MINT`](./actions/MINT.md)           | Create or mint `token` supply                                                                     |
 | [`RUG`](./actions/RUG.md)             | Perform a rug pull on a `token`                                                                   |
 | [`SEND`](./actions/SEND.md)           | Transfer or move some `token` balances between addresses                                          |
@@ -79,9 +79,9 @@ Below is a list of the defined BTNS `ACTION` commands and the function of each:
 
 
 ## `ACTION` `ACTIVATION_BLOCK` list
-BTNS `ACTION` commands are not to be considered `valid` until after `ACTIVATION_BLOCK` for each command has passed.
+CITNS `ACTION` commands are not to be considered `valid` until after `ACTIVATION_BLOCK` for each command has passed.
 
-Below is a list of the BTNS `ACTION` commands and the `ACTIVATION_BLOCK` for each: 
+Below is a list of the CITNS `ACTION` commands and the `ACTIVATION_BLOCK` for each: 
 - `AIRDROP` - TBD
 - `BATCH` - TBD
 - `BET` - TBD
@@ -98,18 +98,18 @@ Below is a list of the BTNS `ACTION` commands and the `ACTIVATION_BLOCK` for eac
 - `SWEEP` -  TBD
 
 
-## BTNS Name Reservations
+## CITNS Name Reservations
 - `BTC` is reserved (avoids confusion with `bitcoin` `BTC`)
-- `XCP` is reserved (avoids confusion with `counterparty` `XCP`)
+- `ATOM` is reserved (avoids confusion with `Cosmos` `ATOM`)
 - `GAS` is reserved for future use (anti-spam mechanism)
-- Registered `counterparty` `ASSET` names are reserved within the BTNS for use by the `ASSET` owner
+- Registered `CITNS` `ASSET` names are reserved within CITNS BTNS for use by the `ASSET` owner
 
 
 ## Additional Notes
 - `broadcast` `status` must be `valid` in order for BTNS `ACTION` to be considered `valid`
-- BTNS tokens can also be used in combination with other protocols, by specifying the semicolon (`;`) as a protocol delimiter.
-- Only one BTNS `ACTION` can be included in a `broadcast` (use `BATCH` to use multiple commands in a single transaction)
-- BTNS tokens can be stamped using the STAMP Protocol
+- CITNS tokens can also be used in combination with other protocols, by specifying the semicolon (`;`) as a protocol delimiter.
+- Only one CITNS `ACTION` can be included in a `broadcast` (use `BATCH` to use multiple commands in a single transaction)
+- CITNS tokens can be stamped using the STAMP Protocol
 - By allowing combining of protocols, you can do many things in a single transaction, such as:
   - Issue BTNS `token` with a `DESCRIPTION` pointing to an external image file
   - Stamp JSON file with meta-data to BTNS token
