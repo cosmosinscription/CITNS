@@ -102,7 +102,7 @@ Below is a list of the CITNS `ACTION` commands and the `ACTIVATION_BLOCK` for ea
 - `BTC` is reserved (avoids confusion with `bitcoin` `BTC`)
 - `ATOM` is reserved (avoids confusion with `Cosmos` `ATOM`)
 - `GAS` is reserved for future use (anti-spam mechanism)
-- Registered `CITNS` `ASSET` names are reserved within CITNS BTNS for use by the `ASSET` owner
+- Registered `CITNS` `ASSET` names are reserved within CITNS  for use by the `ASSET` owner
 
 
 ## Additional Notes
