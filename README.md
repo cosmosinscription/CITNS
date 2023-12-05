@@ -70,7 +70,7 @@ Name                          | Title                                     |  Aut
 
 
 # Cosmos Platform
-**`Cosmos`** is the swiss army knife of Blockchain, and I encourage **ALL** developers looking to build on Distrobouted financial infastrure to take the time to go down the **`Cosmos`** rabbit hole.
+**`Cosmos`** is the swiss army knife of Blockchain, and I encourage **ALL** developers looking to build on Distributed financial infastrure to take the time to go down the **`Cosmos`** rabbit hole.
 - [Cosmos Website](https://Cosmos.network)
 - [Cosmos Documentation](https://docs.counterparty.io)
 - [Cosmos API](https://api.counterparty.io)
