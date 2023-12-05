@@ -1,25 +1,23 @@
-# Broadcast Token Naming System (BTNS)
+# Cosmos Inscription Token Naming System (CITNS)
 
-This is the official repository for Broadcast Token Naming System (**`BTNS`**). 
+This is the official repository for Broadcast Token Naming System (**`CITNS`**). 
 
-The **`BTNS`** operates on the **`Counterparty/Bitcoin`** **`Dogeparty/Doge`** **`other blockchains`** platforms using the `broadcast` feature. 
+The **`CITNS`** operates on the **`Cosmos`** or **`other blockchains`** platforms using the Cosmos `inscription` feature. 
 
-The **`BTNS`** support the **`BRC20`** ordinals assets using the `ordinals` feature. 
+The **`CITNS`** support the **`BRC20`** ordinals assets using the `ordinals` feature. 
 
-**`BTNS`** and **`BTNS-420`** are **NOT** _officially_ endorsed by the **`Counterparty`** project. 
+**`CITNS`** and **`CITNS-420`** are **NOT** _officially_ endorsed by the **`Cosmos`** project. 
 
-**`BTNS`** and **`BTNS-420`** is a **SINGLE** _platform_ that plugs into **`multiple`** chains backend.
+**`CITNS`** and **`CITNS-420`** is a **SINGLE** _platform_ that plugs into **`multiple`** chains backend.
 
-
-**`BTNS-420`** was copied, almost entirely, from the existing **`Counterparty`** platform features. 
 
 This is a personal hobby project, to allow for experimentation with additional token features and functionality.
 
-If you find this project interesting, please consider making a donation of BTC, **`Counterparty`** assets, or **`BTNS`** tokens to `1BTNS42oqp1vzLTfBzHQGPhfvQdi2UjoEc` to support continued experimentation.
+If you find this project interesting, please consider making a donation of **`ATOM`**, **`CITNS`** assets, or **`$COSS`** tokens to `cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv` to support continued experimentation.
 
 
 # Disclaimer 
-`BTNS` is a bleeding-edge experimental protocol to play around with token functionality on **`Counterparty/Bitcoin `** and **`Dogeparty/Doge`**. This is a hobby project, and  I am **NOT** responsible for any losses, financial or otherwise, incurred from using this experimental protocol and its functionality. 
+`CITNS` is a bleeding-edge experimental protocol to play around with token functionality on **`BRC20/Bitcoin `** and **`Cosmos`**. This is a hobby project, and  I am **NOT** responsible for any losses, financial or otherwise, incurred from using this experimental protocol and its functionality. 
 
 Science is messy sometimes... _**DO NOT**_ put in funds your not willing to lose!
 
@@ -28,8 +26,8 @@ Science is messy sometimes... _**DO NOT**_ put in funds your not willing to lose
 
 Name                          | Title                                     |  Author / Owner        | Status        |
 ----------------------------  | ----------------------------------------- | ---------------------- | ------------- |
-[`BTNS`](./docs/BTNS.md)        | Broadcast Token Naming System (**BTNS**) | Jeremy Johnson (J-Dog) | Accepted      |
-[`BTNS-420`](./docs/BTNS-420.md)| BTNS Token Standard (**BTNS-420**)        | Jeremy Johnson (J-Dog) | Draft         |
+[`CITNS`](./docs/CITNS.md)        | Cosmos Inscritpiton Token Naming System (**CITNS**) | Lei Xiaobo  | Draft      |
+[`CITNS-420`](./docs/CITNS-420.md)| CITNS Token Standard (**CITNS-420**)        | Lei Xiaobo  | Draft         |
 
 
 # BTNS `ACTION` commands
