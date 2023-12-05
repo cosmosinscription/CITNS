@@ -1,6 +1,6 @@
 # Cosmos Inscription Token Naming System (CITNS)
 
-This is the official repository for Broadcast Token Naming System (**`CITNS`**). 
+This is the official repository for Cosmos Inscription Token Naming System (**`CITNS`**). 
 
 The **`CITNS`** operates on the **`Cosmos`** or **`other blockchains`** platforms using the Cosmos `inscription` feature. 
 
@@ -35,50 +35,51 @@ Name                          | Title                                     |  Aut
 | ACTION                                     | Description                                                                                       | 
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------- |
 | [`AIRDROP`](./docs/actions/AIRDROP.md)     | Transfer/Distribute `token` supply to a `LIST`                                                    |
-| [`BATCH`](./docs/actions/BATCH.md)         | Execute multiple BTNS `ACTION` commands in a single transaction                                   |
+| [`BATCH`](./docs/actions/BATCH.md)         | Execute multiple CITNS `ACTION` commands in a single transaction                                   |
 | [`BET`](./docs/actions/BET.md)             | Bet `token` on `broadcast` oracle feed outcomes                                                   |
 | [`CALLBACK`](./docs/actions/CALLBACK.md)   | Return all `token` supply to owner address after a set block, in exchange for a different `token` |
 | [`DESTROY`](./docs/actions/DESTROY.md)     | Destroy `token` supply forever                                                                    |
 | [`DISPENSER`](./docs/actions/DISPENSER.md) | Create a dispenser (vending machine) to dispense a `token` when triggered                         |
 | [`DIVIDEND`](./docs/actions/DIVIDEND.md)   | Issue a dividend on a `token`                                                                     |
 | [`ISSUE`](./docs/actions/ISSUE.md)         | Create or issue a `token` and define how the token works                                          |
-| [`LIST`](./docs/actions/LIST.md)           | Create a list for use with various BTNS `ACTION` commands                                         |
+| [`LIST`](./docs/actions/LIST.md)           | Create a list for use with various CITNS `ACTION` commands                                         |
 | [`MINT`](./docs/actions/MINT.md)           | Create or mint `token` supply                                                                     |
 | [`RUG`](./docs/actions/RUG.md)             | Perform a rug pull on a `token`                                                                   |
 | [`SEND`](./docs/actions/SEND.md)           | Transfer or move some `token` balances between addresses                                          |
+| [`TRANSFER`](./docs/actions/TRANSFER.md)   | Transfer or move some `token` balances between addresses                                          |
 | [`SLEEP`](./docs/actions/SLEEP.md)         | Pause all actions on a `token` for a certain number of blocks                                     |
 | [`SWEEP`](./docs/actions/SWEEP.md)         | Transfer all `token` and/or ownerships to a destination address                                   |
 
 
-# BTNS Indexers
-- [BTNS Indexer](.indexer/) (PHP)
+# CITNS Indexers
+- [CITNS Indexer](.indexer/) 
 
 
-# BTNS Explorers
-- [BTNS XChain (mainnet)](https://btns.xchain.io/)
-- [BTNS XChain (testnet)](https://btns-testnet.xchain.io/)
+# CITNS Explorers
+- [CITNS COSS (mainnet)](https://coss.ink/)
+- [CITNS COSS (testnet)](https://coss.ink/)
 
 
-# BTNS APIs
-- [BTNS XChain API (mainnet)](https://btns.xchain.io/api)
-- [BTNS XChain API (testnet)](https://btns-testnet.xchain.io/api)
+# CITNS APIs
+- [CITNS API (mainnet)](https://coss.ink/api)
+- [CITNS API (testnet)](https://coss.ink/api)
 
 
-# BTNS Wallets
-- [Freewallet](https://freewallet.io/)
+# CITNS Wallets
+- [wallet](https://freewallet.io/)
 
 
-# Counterparty Platform
-**`Counterparty`** is the swiss army knife of Bitcoin, and I encourage **ALL** developers looking to build on Bitcoin to take the time to go down the **`Counterparty`** rabbit hole.
-- [Counterparty Website](https://counterparty.io)
-- [Counterparty Documentation](https://docs.counterparty.io)
-- [Counterparty API](https://api.counterparty.io)
+# Cosmos Platform
+**`Cosmos`** is the swiss army knife of Blockchain, and I encourage **ALL** developers looking to build on Distrobouted financial infastrure to take the time to go down the **`Cosmos`** rabbit hole.
+- [Cosmos Website](https://Cosmos.network)
+- [Cosmos Documentation](https://docs.counterparty.io)
+- [Cosmos API](https://api.counterparty.io)
 
 
-# BTNS Logos
+# CITNS Logos
 
-## BTNS Logo
+## CITNS Logo
 ![BTNS Logo](./logos/elephant.svg)
 
-## BTNS-420 Logo
-![BTNS Logo](./logos/BTNS-420.io.png)
+## CITNS-420 Logo
+![BTNS Logo](./logos/CITNS-420.io.png)
