@@ -72,7 +72,7 @@ Science is messy sometimes... _**DO NOT**_ put in funds your not willing to lose
 # CITNS Logos
 
 ## CITNS Logo
-[CITNS Logo]
+- [CITNS Logo]
 
 ## CITNS-420 Logo
-[CITNS Logo]
+- [CITNS Logo]
