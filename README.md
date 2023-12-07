@@ -2,7 +2,7 @@
 
 This is the official repository for Cosmos Inscription Token Naming System (**`CITNS`**). 
 
-The **`CITNS`** operates on the **`Cosmos`** or **`other blockchains`** platforms using the Univsersal Cosmos `inscription` standard. 
+The **`CITNS`** operates on the **`Cosmos`** or **`other blockchains`** platforms using the Univsersal `CITNS` standard. 
 
 The **`CITNS`** support the **`BRC20`** ordinals assets using the `ordinals` feature. 
 
