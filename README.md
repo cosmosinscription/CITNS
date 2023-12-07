@@ -2,7 +2,7 @@
 
 This is the official repository for Cosmos Inscription Token Naming System (**`CITNS`**). 
 
-The **`CITNS`** operates on the **`Cosmos`** or **`other blockchains`** platforms using the Cosmos `inscription` feature. 
+The **`CITNS`** operates on the **`Cosmos`** or **`other blockchains`** platforms using the Univsersal Cosmos `inscription` standard. 
 
 The **`CITNS`** support the **`BRC20`** ordinals assets using the `ordinals` feature. 
 
@@ -59,20 +59,20 @@ Science is messy sometimes... _**DO NOT**_ put in funds your not willing to lose
 
 
 # CITNS Wallets
-- [wallet](https://freewallet.io/)
+- [wallet]
 
 
 # Cosmos Platform
 **`Cosmos`** is the swiss army knife of Blockchain, and I encourage **ALL** developers looking to build on Distributed financial infastrure to take the time to go down the **`Cosmos`** rabbit hole.
-- [Cosmos Website](https://Cosmos.network)
-- [Cosmos Documentation](https://docs.counterparty.io)
-- [Cosmos API](https://api.counterparty.io)
+- [Cosmos Website]
+- [Cosmos Documentation]
+- [Cosmos API]
 
 
 # CITNS Logos
 
 ## CITNS Logo
-![BTNS Logo](./logos/elephant.svg)
+![CITNS Logo]
 
 ## CITNS-420 Logo
-![BTNS Logo](./logos/CITNS-420.io.png)
+![CITNS Logo]
