@@ -1,5 +1,5 @@
 # MINT command
-This command mints `BTNS` `token` supply
+This command mints `CITNS` `token` supply
 
 ## PARAMS
 | Name          | Type   | Description                            |
@@ -16,13 +16,13 @@ This command mints `BTNS` `token` supply
 
 ## Examples
 ```
-bt:MINT|0|JDOG|1
-This example mints 1 JDOG `token` to the broadcasting address
+bt:MINT|0|COSS|1
+This example mints 1 COSS `token` to the broadcasting address
 ```
 
 ```
-bt:MINT|0|BRRR|10000000000000|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
-This example mints 10,000,000,000,000 BRRR tokens and transfers them to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev 
+bt:MINT|0|BRRR|10000000000000|cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv
+This example mints 10,000,000,000,000 BRRR tokens and transfers them to cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv 
 ```
 
 ## Rules
