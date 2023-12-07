@@ -17,8 +17,8 @@ This command pays a dividend to `token` holders of a `token`.
 
 ## Examples
 ```
-bt:DIVIDEND|0|1|BRRR|BACON|1
-This example pays a dividend of 1 BACON token to every holder of 1 BRRR token
+bt:DIVIDEND|0|1|COSS|BACON|1
+This example pays a dividend of 1 BACON token to every holder of 1 COSS token
 ```
 
 ```
