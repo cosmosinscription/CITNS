@@ -1,5 +1,5 @@
 # ISSUE command
-This command creates or issues a `BTNS` `token`
+This command creates or issues a `CITNS` `token`
 
 ## PARAMS
 | Name               | Type   | Description                                                                                 |
@@ -22,8 +22,8 @@ This command creates or issues a `BTNS` `token`
 | `CALLBACK_BLOCK`   | String | Enable `CALLBACK` command after `CALLBACK_BLOCK`                                            |
 | `CALLBACK_TICK`    | String | `TICK` `token` users get when `CALLBACK` command is used                                    |
 | `CALLBACK_AMOUNT`  | String | `TICK` `token` amount that users get when `CALLBACK` command is used                        |
-| `ALLOW_LIST`       | String | `TX_HASH` of a BTNS `LIST` of addresses allowed to interact with this token                 |
-| `BLOCK_LIST`       | String | `TX_HASH` of a BTNS `LIST` of addresses NOT allowed to interact with this token             |
+| `ALLOW_LIST`       | String | `TX_HASH` of a CITNS `LIST` of addresses allowed to interact with this token                 |
+| `BLOCK_LIST`       | String | `TX_HASH` of a CITNS `LIST` of addresses NOT allowed to interact with this token             |
 
 
 ## Formats
@@ -48,43 +48,43 @@ This command creates or issues a `BTNS` `token`
 
 ## Examples
 ```
-bt:ISSUE|0|JDOG
-This example issues a JDOG token 
+bt:ISSUE|0|COSS
+This example issues a COSS token 
 ```
 
 ```
-bt:ISSUE|0|JDOG|1||||1|||1
-This example issues a JDOG token with MAX_SUPPLY set to 1, Mints 1 token via MINT_SUPPLY, and has LOCK_SUPPLY set to 1 to permanently lock the MAX_SUPPLY
+bt:ISSUE|0|COSS|1||||1|||1
+This example issues a COSS token with MAX_SUPPLY set to 1, Mints 1 token via MINT_SUPPLY, and has LOCK_SUPPLY set to 1 to permanently lock the MAX_SUPPLY
 ```
 
 ```
-bt:ISSUE|0|JDOG|0|0|0|http://j-dog.net/images/JDOG_icon.png
-This example issues a JDOG token with a DESCRIPTION which points to an icon
+bt:ISSUE|0|COSS|0|0|0|http://commswap.com/images/COSS_icon.png
+This example issues a COSS token with a DESCRIPTION which points to an icon
 ```
 
 ```
-bt:ISSUE|0|JDOG|0|0|0|http://j-dog.net/images/JDOG_icon.png|0|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
-This example issues a JDOG token with a DESCRIPTION which points to an icon, and transfers token ownership to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
+bt:ISSUE|0|COSS|0|0|0|http://commswap.com/images/COSS_icon.png|0|cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv
+This example issues a COSS token with a DESCRIPTION which points to an icon, and transfers token ownership to cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv
 ```
 
 ```
-bt:ISSUE|0|JDOG|1000|1|0
-This example issues a JDOG token with a max supply of 1000, and a maximum mint of 1 JDOG per mint
+bt:ISSUE|0|COSS|1000|1|0
+This example issues a COSS token with a max supply of 1000, and a maximum mint of 1 COSS per mint
 ```
 
 ```
-bt:ISSUE|0|JDOG|1000|1|0|BTNS Tokens Are Cool!
-This example issues a JDOG token with a max supply of 1000, and a DESCRIPTION of 'BTNS Tokens are Cool!'
+bt:ISSUE|0|COSS|1000|1|0|CITNS Tokens Are Cool!
+This example issues a COSS token with a max supply of 1000, and a DESCRIPTION of 'CITNS Tokens are Cool!'
 ```
 
 ```
-bt:ISSUE|0|BRRR|10000000000000000000|10000000000000|0|https://j-dog.net/json/JDOG.json|100
+bt:ISSUE|0|BRRR|10000000000000000000|10000000000000|0|https://commswap.com/json/COSS.json|100
 This example issues a BRRR token with a max supply of 1 Quandrillion supply and a maximum mint of 1 Trillion BRRR per mint, associates a JSON file with the token, and immediately mints 100 BRRR to the broadcasting address.
 ```
 
 ```
-bt:ISSUE|0|TEST|100|1|0||1|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
-This example issues a TEST token with a max supply of 100, and a maximum mint of 1 TEST per mint. This also mints 1 TEST token, and transfers ownership AND initial token supply to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
+bt:ISSUE|0COSS100|1|0||1|cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv|cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv
+This example issues a TEST token with a max supply of 100, and a maximum mint of 1 TEST per mint. This also mints 1 TEST token, and transfers ownership AND initial token supply to cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv
 ```
 
 ## Rules
@@ -119,6 +119,6 @@ This example issues a TEST token with a max supply of 100, and a maximum mint of
 - `DESCRIPTION` can NOT contain any pipe `|` or semi-colon `;` characters, as these are reserved
 - `CALLBACK_BLOCK`, `CALLBACK_TICK`, and `CALLBACK_AMOUNT` can be edited via `ISSUE` action until `LOCK_CALLBACK` is set to `1`
 - `DEPLOY` `ACTION` can be used for backwards-compatability with BRC20/SRC20 `DEPLOY`
-- By default any address can interact with a BTNS token, to change this behavior use `ALLOW_LIST` and `BLOCK_LIST`
+- By default any address can interact with a CITNS token, to change this behavior use `ALLOW_LIST` and `BLOCK_LIST`
 - If `TICK` contains any unicode characters, then `TICK` should be `base64` encoded
-- `counterparty` `ASSET` and `SUBASSET` names are reserved within the BTNS for use by the `counterparty` owner
+- `counterparty` `ASSET` and `SUBASSET` names are reserved within the CITNS for use by the `counterparty` owner
