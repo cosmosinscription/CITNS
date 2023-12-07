@@ -40,7 +40,7 @@ CITNS-420 `ACTION` `PARAMS` will not be considered finalized until `ACTIVATION_B
 # Specification
 
 ## Project Prefix
-The default CITNS prefix which should be used for CITNS transactions is `btns` and `bt`. All CITNS actions will begin with `btns:` or `bt:` (case insensitive)
+The default CITNS prefix which should be used for CITNS transactions is `CITNS` and `bt`. All CITNS actions will begin with `CITNS:` or `bt:` (case insensitive)
 
 ## Project Versioning
 The default CITNS version is `0` when no `broadcast` `value` is specified
@@ -51,7 +51,7 @@ Establishing a `VERSION` as the first field in every `ACTION` command, allows fo
 The default CITNS format version is `0` when no `VERSION` is given
 
 ## `ACTION` commands and `PARAMS`
-By defining `ACTION` commands and `PARAMS` for each command, we standardize a way in which the `BTNS` `token` functionality can be extended.
+By defining `ACTION` commands and `PARAMS` for each command, we standardize a way in which the `CITNS` `token` functionality can be extended.
 
 **Broadcast Format:**
 `bt:ACTION|PARAMS`
@@ -102,26 +102,34 @@ Below is a list of the CITNS `ACTION` commands and the `ACTIVATION_BLOCK` for ea
 - `BTC` is reserved (avoids confusion with `bitcoin` `BTC`)
 - `ATOM` is reserved (avoids confusion with `Cosmos` `ATOM`)
 - `GAS` is reserved for future use (anti-spam mechanism)
+- `COSS` is reserved (avoids confusion with `Cosmos` `COSS`)
+- `X` is reserved (avoids confusion with `Cosmos` `X`)
+- `0x` is reserved (avoids confusion with `Cosmos` `0x`)
+- `Satoshi` is reserved (avoids confusion with `Cosmos` `Satoshi`)
+- `KYC` is reserved (avoids confusion with `Cosmos` `KYC`)
+- `AML` is reserved (avoids confusion with `Cosmos` `AML`)
+
+
 - Registered `CITNS` `ASSET` names are reserved within CITNS  for use by the `ASSET` owner
 
 
 ## Additional Notes
-- `broadcast` `status` must be `valid` in order for BTNS `ACTION` to be considered `valid`
+- `broadcast` `status` must be `valid` in order for CITNS `ACTION` to be considered `valid`
 - CITNS tokens can also be used in combination with other protocols, by specifying the semicolon (`;`) as a protocol delimiter.
 - Only one CITNS `ACTION` can be included in a `broadcast` (use `BATCH` to use multiple commands in a single transaction)
 - CITNS tokens can be stamped using the STAMP Protocol
 - By allowing combining of protocols, you can do many things in a single transaction, such as:
-  - Issue BTNS `token` with a `DESCRIPTION` pointing to an external image file
-  - Stamp JSON file with meta-data to BTNS token
-  - Stamp image data inside a BTNS token
+  - Issue CITNS `token` with a `DESCRIPTION` pointing to an external image file
+  - Stamp JSON file with meta-data to CITNS token
+  - Stamp image data inside a CITNS token
   - Reference an ordinals inscription
   - Reference an IPFS CID
 
 **Example 1**
-`bt:ISSUE|JDOG;stamp:base64data`
-The above example issues a JDOG token, and STAMPs file data into the token.
+`bt:ISSUE|COSS;stamp:base64data`
+The above example issues a COSS token, and STAMPs file data into the token.
 
-## Current BTNS `ACTION` Functionality
+## Current CITNS `ACTION` Functionality
 - `AIRDROP`
 - `BATCH`
 - `BET`
