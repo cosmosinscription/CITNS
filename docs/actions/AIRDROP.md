@@ -1,5 +1,5 @@
 # AIRDROP command
-This command airdrops `token` supply to one or more `BTNS` lists.
+This command airdrops `token` supply to one or more `CITNS` lists.
 
 ## PARAMS
 | Name      | Type   | Description                         |
@@ -7,7 +7,7 @@ This command airdrops `token` supply to one or more `BTNS` lists.
 | `VERSION` | String | Broadcast Format Version            |
 | `TICK`    | String | 1 to 250 characters in length       |
 | `AMOUNT`  | String | Amount of `tokens` to airdrops      |
-| `LIST`    | String | `TX_HASH` of a BTNS `LIST` commands |
+| `LIST`    | String | `TX_HASH` of a CITNS `LIST` commands |
 
 ## Formats
 
