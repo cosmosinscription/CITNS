@@ -28,23 +28,23 @@ This command sends/transfers one or more `token`s between addresses
 
 ## Examples
 ```
-bt:SEND|0|JDOG|1|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
-This example sends 1 JDOG token to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev
+bt:SEND|0|COSS|1|cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv
+This example sends 1 COSS token to cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv
 ```
 
 ```
-bt:SEND|0|BRRR|5|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev|BTNS is Awesome
-This example sends 5 BRRR tokens to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev with a memo
+bt:SEND|0|BRRR|5|cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv|CITNS is Awesome
+This example sends 5 BRRR tokens to cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv with a memo
 ```
 
 ```
-bt:SEND|1|BRRR|5|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev|1|1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9
-This example sends 5 BRRR tokens to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev and 1 BRRR token to 1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9
+bt:SEND|1|BRRR|5|cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv|1|1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9
+This example sends 5 BRRR tokens to cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv and 1 BRRR token to 1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9
 ```
 
 ```
-bt:SEND|2|BRRR|5|1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev|TEST|1|1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9|BTNS is Awesome
-This example sends 5 BRRR tokens to 1JDogZS6tQcSxwfxhv6XKKjcyicYA4Feev and 1 TEST token to 1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9 with a memo
+bt:SEND|2|BRRR|5|cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrvCOSS1|1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9|CITNS is Awesome
+This example sends 5 BRRR tokens to cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv and 1 TEST token to 1BoogrfDADPLQpq8LMASmWQUVYDp4t2hF9 with a memo
 ```
 
 ## Rules
