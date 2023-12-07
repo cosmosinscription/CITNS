@@ -1255,22 +1255,22 @@ function isCryptoAddress( $address=null ){
 }
 
 
-// Generalized function to invoke BTNS action commands
-function btnsAction($action=null, $params=null, $data=null, $error=null){
-    if($action=='AIRDROP')      btnsAirdrop($params, $data, $error);
-    if($action=='BATCH')        btnsBatch($params, $data, $error);
-    if($action=='BET')          btnsBet($params, $data, $error);
-    if($action=='CALLBACK')     btnsCallback($params, $data, $error);
-    if($action=='DESTROY')      btnsDestroy($params, $data, $error);
-    if($action=='DISPENSER')    btnsDispenser($params, $data, $error);
-    if($action=='DIVIDEND')     btnsDividend($params, $data, $error);
-    if($action=='ISSUE')        btnsIssue($params, $data, $error);
-    if($action=='LIST')         btnsList($params, $data, $error);
-    if($action=='MINT')         btnsMint($params, $data, $error);
-    if($action=='RUG')          btnsRug($params, $data, $error);
-    if($action=='SLEEP')        btnsSleep($params, $data, $error);
-    if($action=='SEND')         btnsSend($params, $data, $error);
-    if($action=='SWEEP')        btnsSweep($params, $data, $error);
+// Generalized function to invoke CITNS action commands
+function CITNSAction($action=null, $params=null, $data=null, $error=null){
+    if($action=='AIRDROP')      CITNSAirdrop($params, $data, $error);
+    if($action=='BATCH')        CITNSBatch($params, $data, $error);
+    if($action=='BET')          CITNSBet($params, $data, $error);
+    if($action=='CALLBACK')     CITNSCallback($params, $data, $error);
+    if($action=='DESTROY')      CITNSDestroy($params, $data, $error);
+    if($action=='DISPENSER')    CITNSDispenser($params, $data, $error);
+    if($action=='DIVIDEND')     CITNSDividend($params, $data, $error);
+    if($action=='ISSUE')        CITNSIssue($params, $data, $error);
+    if($action=='LIST')         CITNSList($params, $data, $error);
+    if($action=='MINT')         CITNSMint($params, $data, $error);
+    if($action=='RUG')          CITNSRug($params, $data, $error);
+    if($action=='SLEEP')        CITNSSleep($params, $data, $error);
+    if($action=='SEND')         CITNSSend($params, $data, $error);
+    if($action=='SWEEP')        CITNSSweep($params, $data, $error);
 }
 
 
@@ -1347,11 +1347,11 @@ function createTxIndex( $data=null ){
 
 // Handles adding protocol changes to $protocol_changes global var (used in PROTOCOL_CHANGES constant)
 // @param {name}                string  Unique Name for protocol change
-// @param {version_major}       integer BTNS Indexer MAJOR version
-// @param {version_minor}       integer BTNS Indexer MINOR version
-// @param {version_revision}    integer BTNS Indexer REVISION version
-// @param {mainnet_block_index} integer BTNS Indexer REVISION version
-// @param {testnet_block_index} integer BTNS Indexer REVISION version
+// @param {version_major}       integer CITNS Indexer MAJOR version
+// @param {version_minor}       integer CITNS Indexer MINOR version
+// @param {version_revision}    integer CITNS Indexer REVISION version
+// @param {mainnet_block_index} integer CITNS Indexer REVISION version
+// @param {testnet_block_index} integer CITNS Indexer REVISION version
 // Returns boolean (true) for success or string with specific error message
 function addProtocolChange($name=null, $version_major=null, $version_minor=null, $version_revision=null, $mainnet_block_index=null, $testnet_block_index=null){
     global $protocol_changes;
@@ -1457,7 +1457,7 @@ function isValidLock($btInfo=null, $data=null, $lock=null){
 }
 
 // Handle determining if first param is TICK or VERSION
-function isLegacyBTNSFormat($params){
+function isLegacyCITNSFormat($params){
     $version = $params[0]; // VERSION or TICK
     // VERSION will max out at 99 (2 chars)
     if(strlen($version)>2)
@@ -1465,11 +1465,11 @@ function isLegacyBTNSFormat($params){
     // VERSION should be NULL or integer
     if(is_string($version) && !is_numeric($version))
         return true;
-    // Add more rules here if ppl keep using old BTNS format...
+    // Add more rules here if ppl keep using old CITNS format...
     return false;
 }
 
-// Handle setting ACTION PARAMS based on format VERSION (updates BTNS transaction data object)
+// Handle setting ACTION PARAMS based on format VERSION (updates CITNS transaction data object)
 function setActionParams($data=null, $params=null, $format=null){
     $fields = explode('|',$format);
     foreach($fields as $idx => $field){
