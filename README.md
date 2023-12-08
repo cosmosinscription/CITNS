@@ -15,7 +15,7 @@ The **`CITNS`** support the **`BRC20`** ordinals assets using the `ordinals` fea
 
 This is a personal hobby project, to allow for experimentation with additional token features and functionality.
 
-If you find this project interesting, please consider making a donation of **`ATOM`**, **`CITNS`** assets, or **`$COSS`** tokens to `cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv` to support continued experimentation.
+If you find this project interesting, please consider making a donation of **`ATOM`**, **`CITNS`**, **`Cosmos`** assets, or **`$COSS`** tokens to `cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv` to support continued experimentation.
 
 
 # Disclaimer 
