@@ -10,7 +10,7 @@ The **`CITNS`** support the **`BRC20`** ordinals assets using the `ordinals` fea
 
 **`CITNS`** and **`CITNS-420`** is a **SINGLE** _platform_ that plugs into **`multiple`** chains backend.
 
-**`BRC20`** or other **`XRC20`** Protocol **`Counterparty`** **`Dogeparty`** has established a beautiful asset naming system which allows for registration of unique assets, but it can’t handle a natural spelling with more flexible rules of tick and we want a new naming stardand which can run on top of any blockchain and write data on...BTC,ETH,DOGE,COSMOS,ETC,etc., a brand new multi-chain platform people could booking hotel,buy food,clothes with the token the like, **`a full chain-agnostic platform`** ,the CITNS spec defines all the various platform ACTIONS and PARAMS in various formats, and the CITNS indexer parses/validates that data to determine what is valid and not. Let's start from Cosmos
+**`BRC20`** or other **`XRC20`** Protocol and **`Counterparty`** or **`Dogeparty`** has established a beautiful asset naming system which allows for registration of unique assets, but it can’t handle a natural spelling with more flexible rules for tick and we want a new universal naming stardand which can run on top of any blockchain and write data on...BTC,ETH,DOGE,COSMOS,ETC,etc., a brand new multi-chain platform people could booking hotel,buy food,clothes with the token the like, **`a full chain-agnostic platform`** ,the CITNS spec defines all the various platform ACTIONS and PARAMS in various formats, and the CITNS indexer parses/validates that data to determine what is valid and not. Let's start from Cosmos eco
 
 
 This is a personal hobby project, to allow for experimentation with additional token features and functionality.
