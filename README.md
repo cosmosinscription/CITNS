@@ -19,7 +19,7 @@ If you find this project interesting, please consider making a donation of **`AT
 
 
 # Disclaimer 
-`CITNS` is a bleeding-edge experimental protocol to play around with token functionality on **`BRC20/Bitcoin `** and **`Cosmos`**. This is a hobby project, and  I am **NOT** responsible for any losses, financial or otherwise, incurred from using this experimental protocol and its functionality. 
+`CITNS` is a bleeding-edge experimental protocol to play around with token functionality on **`Bitcoin `** **`Doge `** and **`Cosmos`**. This is a hobby project, and  I am **NOT** responsible for any losses, financial or otherwise, incurred from using this experimental protocol and its functionality. 
 
 Science is messy sometimes... _**DO NOT**_ put in funds your not willing to lose!
 
