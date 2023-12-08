@@ -7,7 +7,7 @@
 $network = ($network!='mainnet') ? $network : 'mainnet';
 define("NETWORK", $network);
 
-// BTNS Indexer Version
+// CITNS Indexer Version
 define("VERSION_MAJOR", 0);
 define("VERSION_MINOR", 10);
 define("VERSION_REVISION",1);
@@ -17,7 +17,7 @@ define("VERSION_STRING", VERSION_MAJOR . '.' . VERSION_MINOR . '.' . VERSION_REV
 define("MIN_TICK_LENGTH",1);
 define("MAX_TICK_LENGTH",250);
 
-// Reserved BTNS TICK names
+// Reserved CITNS TICK names
 $reserved = array('BTC','XCP','GAS');
 define("RESERVED_TICKS",$reserved);
 
@@ -31,20 +31,20 @@ define('MAX_TOKEN_DECIMALS',18);
 
 // Mainnet config
 if(NETWORK=='mainnet'){
-    // First block with BTNS transaction
+    // First block with CITNS transaction
     define("FIRST_BLOCK",789742);
 
-    // BTNS Address 
+    // CITNS Address 
     define('BURN_ADDRESS', "1Muhahahahhahahahahahhahahauxh9QX");
-    define('GAS_ADDRESS', "1BTNSGASK5En7rFurDJ79LQ8CVYo2ecLC8");
+    define('GAS_ADDRESS', "1CITNSGASK5En7rFurDJ79LQ8CVYo2ecLC8");
 }
 
 // Testnet config
 if(NETWORK=='testnet'){
-    // First block with BTNS transaction (none yet, so just picking block)
+    // First block with CITNS transaction (none yet, so just picking block)
     define("FIRST_BLOCK",2473585);
 
-    // BTNS Address 
+    // CITNS Address 
     define('BURN_ADDRESS', "mvCounterpartyXXXXXXXXXXXXXXW24Hef");
     define('GAS_ADDRESS', "mvCounterpartyXXXXXXXXXXXXXXW24Hef");
 }
@@ -64,7 +64,7 @@ require_once('rollback.php');
 // Protocol Changes / Activation blocks
 require_once('protocol_changes.php');
 
-// BTNS Actions
+// CITNS Actions
 require_once('actions/airdrop.php');
 require_once('actions/batch.php');
 require_once('actions/bet.php');
