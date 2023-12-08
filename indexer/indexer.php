@@ -16,7 +16,7 @@
  *
  * Science is messy sometimes... DO NOT put in funds your not willing to lose!
  * 
- * If you use this, please donate: 1CITNS42oqp1vzLTfBzHQGPhfvQdi2UjoEc
+ * If you use this, please donate: cosmos1f0wvhastnvu3ynyspvv8de3rpe66jmhwtthdrv
  *
  * Author: Lei Xiaobo <lei@commswap.com>
  * 
