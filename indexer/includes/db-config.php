@@ -8,8 +8,8 @@ if(NETWORK=='mainnet'){
     define("DB_HOST", "localhost");
     define("DB_USER", "mysql_username");
     define("DB_PASS", "mysql_password");
-    define("DB_DATA", "BTNS_Counterparty"); // Database where BTNS data is stored
-    define("CP_DATA", "Counterparty");      // Database where Counterparty data is stored 
+    define("DB_DATA", "CITNS_Cosmos"); // Database where CITNS data is stored
+    define("CP_DATA", "Cosmos");      // Database where Cosmos data is stored 
 }
 
 // Testnet config
@@ -17,8 +17,8 @@ if(NETWORK=='testnet'){
     define("DB_HOST", "localhost");
     define("DB_USER", "mysql_username");
     define("DB_PASS", "mysql_password");
-    define("DB_DATA", "BTNS_Counterparty_Testnet"); // Database where BTNS data is stored
-    define("CP_DATA", "Counterparty_Testnet");      // Database where Counterparty data is stored 
+    define("DB_DATA", "CITNS_Cosmos_Testnet"); // Database where CITNS data is stored
+    define("CP_DATA", "Cosmos_Testnet");      // Database where Cosmos data is stored 
 }
 
 ?>
