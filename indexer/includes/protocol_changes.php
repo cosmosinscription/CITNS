@@ -9,7 +9,7 @@ $changes = array(
     // 'NAME' => array($version_major, $version_minor, $version_revision, $mainnet_block_index, $testnet_block_index),
 
     // Define `ACTION` commands and `ACTIVATION_BLOCK` for each (ALL UPPER case)
-    // BTNS-420 SPEC defines when things are ACTUALLY activated
+    // CITNS-420 SPEC defines when things are ACTUALLY activated
     // active here just means active for testing / debugging
     'AIRDROP'   => array(0,  10,   0,     0,      0),
     'BATCH'     => array(0,  10,   0,     0,      0),
